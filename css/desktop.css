@@ -1,0 +1,32 @@
+@media screen and (min-width: 1158px;) {
+    
+    .nav-list{
+        display: flex;
+        gap: 40px;
+}
+
+.nav-list-item{
+    position: relative;
+}
+
+.address-contacts-list{
+    display: inline-flex;
+    gap: 40px;
+}
+
+.address-contact-item-link{
+    text-decoration: none;
+    color: var(--slate);
+}
+
+.section-hero {
+    background: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../image/hero/desktop-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0 auto;
+
+
+}
+
+}
