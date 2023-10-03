@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homework-07</title>
-    <link rel="stylesheet" href="css/desktop.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/tablet.css">
+
+    <link rel="stylesheet" href="css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +33,33 @@
                         <li class="address-contact-list-item"><a href="tel:+110001111111" class="address-contact-item-link">+11 000 111 11 11</a></li>
                     </ul>
                 </address>
+                <button class="mobile-nav-button js-open-menu">
+                    <svg viewBox="0 0 40 40">
+                        <use href="./icons.svg#menu"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-nav js-menu-container is-open">
+                    <ul class="mobile-nav-menu">
+                        <li class="mobile-nav-menu-item"><a href="./index.html">Studio</a></li>
+                        <li class="mobile-nav-menu-item"><a href="./portfolio.html">Portfolio</a></li>
+                        <li class="mobile-nav-menu-item"><a href="">Contacts</a></li>
+                    </ul>
+                    <ul class="mobile-nav-info">
+                        <li class="mobile-nav-info-item"><a href="tel:+110001111111">+11 000 111 11 11</a></li>
+                        <li class="mobile-nav-info-item"><a href="emailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                    
+                    <ul class="mobile-nav-social-media">
+                        <li class="mobile-nav-social-media-icon"><svg><use href="./icons.svg#instagram-footer"></use></svg></li>
+                        <li class="mobile-nav-social-media-icon"><svg><use href="./icons.svg#twitter-footer"></use></svg></li>
+                        <li class="mobile-nav-social-media-icon"><svg><use href="./icons.svg#facebook-footer"></use></svg></li>
+                        <li class="mobile-nav-social-media-icon"><svg><use href="./icons.svg#linkedin-footer"></use></svg></li>
+                    </ul>
+                    <button type="button">
+                        <svg class="mobile-nav-close js-close-menu"><use href="./icons.svg#mobile-close"></use></svg>
+                    </button>
+                    
+                </nav>
         </div>
 
     </header>
@@ -277,6 +303,7 @@
             
         </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>
