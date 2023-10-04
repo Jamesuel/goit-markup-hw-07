@@ -93,6 +93,7 @@ line-height: 21px; /* 116.667% */
 letter-spacing: 0.54px;
 text-transform: uppercase;
 text-decoration: none;
+margin-left: 16px;
 }
 
 
@@ -141,6 +142,8 @@ nav{
     cursor: pointer;
     border: 0;
     background: transparent;
+    margin-top: 6px;
+    margin-right: 6px;
 }
 
 .mobile-nav-button svg{
@@ -324,21 +327,24 @@ color: var(--white);
 }
 
 .features-list-item{
-    display: inline-block; 
+    text-align: center; 
+    
 }
 
 .features-list{
     display: flex;
-    gap: 24px;
+    gap: 72px;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .feature-list-title{
-font-size: 20px;
-font-weight: 500;
-line-height: 24px; /* 120% */
-letter-spacing: 0.4px;
+font-size: 36px;
+font-weight: 700;
+line-height: 40px; /* 120% */
+letter-spacing: 0.72px;
 color: var(--navyblue);
 margin-bottom: 8px;
 }
@@ -348,6 +354,8 @@ font-size: 16px;
 line-height: 24px; /* 150% */
 letter-spacing: 0.32px;
 color: var(--slate);
+text-align:start;
+width: 396px;
 }
 
 .section-title{
@@ -382,6 +390,16 @@ margin-bottom: 72px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     flex-direction: column;
     align-items: center;
+    margin-bottom: 72px;
+}
+
+
+.section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -459,11 +477,13 @@ font-size: 16px;
 line-height: 24px; /* 150% */
 letter-spacing: 0.32px;
 margin-top: 17.5px;
+text-align: left;
 }
 
 .footer{
     background: var(--navyblue);
     padding: 120px 0px;
+    text-align: center;
 }
 
 .social-media-icon-footer{
@@ -477,9 +497,12 @@ margin-top: 17.5px;
 
 .footer-container{
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: center;
+    gap: 86px;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+
 }
 
 .social-media-footer{
@@ -522,7 +545,6 @@ border-radius: 4px;
 background: var(--IRIS, #4D5AE5);
 padding: 8px 24px;
 position: relative;
-margin-top: 39px;
 color: var(--WHITE, #FFF);
 text-align: center;
 /* Button Text */
@@ -654,6 +676,7 @@ transition: var(--transition-duration);
 
 
 .feature-icon{
+    display: none;
     width: 264px;
     height: 112px;
     background-color: var(--cloud);
@@ -1181,6 +1204,13 @@ letter-spacing: 0.64px;
         display: none;
     }
 
+    .section-title-heading{
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 60px; /* 107.143% */
+letter-spacing: 1.12px;
+    }
+
     .team-list{
         flex-wrap: wrap;
         gap: 24px;
@@ -1219,6 +1249,97 @@ letter-spacing: 0.64px;
         text-decoration: none;
         color: var(--slate);
     }
+
+    .address-contacts-list{
+        display: block;
+        margin-right: 16px;
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--slate);
+        line-height: 14px; 
+        letter-spacing: 0.48px;
+    }
+
+    .address-contact-list-item1{
+        margin-bottom: 12px;
+    }
+
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .team-list {
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap into multiple columns */
+        justify-content: center; /* Horizontally centers the items within each column */
+        gap: 24px; /* Adjust the gap between team members */
+    }
+    
+    .team-list-item {
+        flex: 0 1 calc(37% - 20px); /* Adjust the width of each team member (2 columns) */
+        border-radius: 0px 0px 4px 4px;
+        background: var(--WHITE, #FFF);
+        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px; /* Adjust the margin between team members */
+    }
+    
+    
+
+    .section-services{
+        display: none;
+    }
+    
+
+
+    .section-features {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .features-list {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap into multiple columns */
+        justify-content: space-between; /* Create space between the columns */
+        gap: 20px; /* Adjust the gap between features */
+    }
+    
+    .features-list-item {
+        width: calc(100% - 30px); /* Set the width for each feature (2 columns) */
+        text-align: left;
+    box-sizing: border-box;
+        
+    }
+
+    .features-list-description{
+        max-width: 340px;
+    }
+
+    .mobile-nav-button{
+        display: none;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+
+    
+    
+
+    
+
+    
+
+    
+
+
+
+
 
 }
 
