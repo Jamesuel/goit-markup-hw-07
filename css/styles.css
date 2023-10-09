@@ -71,6 +71,7 @@ address{
 .container{
     width: 100%;
     margin: auto;
+    padding: 0 16px;
 }
 
 body{
@@ -155,30 +156,34 @@ nav{
 .mobile-nav{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: stretch;
     position: fixed;
     top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    left: 100%;
+    height: 100vh;
     background-color: var(--white);
     pointer-events: none;
-    transition-property: transform;
+    transition-property: left;
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
-    transform: translateX(100%);
+    padding: 80px 20px 20px;
+}
+
+@media screen and (min-width: 428px){
+    .mobile-nav{
+        padding: 80px 40px 40px;
+    }
 }
 
 .mobile-nav.is-open{
     pointer-events: auto;
-    transform: none;
+    left: 0;
     
 }
 
 .mobile-nav-close{
-    position: absolute;
-    top: 32px;
-    right: 32px;
+
     background-color: transparent;
     border: 0;
     cursor: pointer;
@@ -195,8 +200,10 @@ nav{
 }
 
 .mobile-nav-menu{
-    padding: 80px 40px;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .mobile-nav-menu-item{
@@ -209,17 +216,17 @@ font-weight: 700;
 line-height: 40px; /* 111.111% */
 letter-spacing: 0.72px;
 text-transform: capitalize;
-margin-bottom: 40px;
 }
 
-.mobile-nav-info{
-    padding-left: 40px;
-    flex-wrap: wrap;
-}
+
 
 .mobile-nav-menu a,
 .mobile-nav-info a {
     text-decoration: none;
+}
+
+.mobile-nav-info{
+    margin-bottom: 48px;
 }
 
 .mobile-nav-info li.mobile-nav-info-item:first-child a{
@@ -231,6 +238,8 @@ font-weight: 700;
 line-height: 40px; /* 111.111% */
 letter-spacing: 0.72px;
 text-transform: capitalize;
+display: block;
+margin-bottom: 40px;
 }
 
 .mobile-nav-info li.mobile-nav-info-item:nth-child(2) a {
@@ -259,9 +268,7 @@ letter-spacing: 0.4px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 56px;
-    justify-content: center;
-    margin-left: 40px;
+    justify-content: space-between;
   }
 
 .mobile-nav-social-media-icon svg{
@@ -272,7 +279,7 @@ letter-spacing: 0.4px;
 
 
 .section{
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .section-services{
@@ -287,6 +294,7 @@ line-height: 40px;
 letter-spacing: 0.72px;
 margin-bottom: 48px;
 color: var(--white);
+padding: 0 16px;
 }
 
 .section-hero {
@@ -302,7 +310,7 @@ color: var(--white);
 
 .heading-hero{
     text-align: center;
-    padding: 188px 0;
+    padding: 112px 0;
 }
 
 
@@ -355,7 +363,7 @@ line-height: 24px; /* 150% */
 letter-spacing: 0.32px;
 color: var(--slate);
 text-align:start;
-width: 396px;
+
 }
 
 .section-title{
@@ -400,6 +408,7 @@ margin-bottom: 72px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 0 16px;
 }
 
 
@@ -514,15 +523,17 @@ line-height: 24px; /* 150% */
 letter-spacing: 0.32px;
 }
 
+
 .email-user-box{
     padding: 8px 16px;
-    width: 264px;
+    width: 100%;
 height: 40px;
 flex-shrink: 0;
 border-radius: 4px;
 border: 1px solid var(--WHITE, #FFF);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 background-color: var(--navyblue);
+
 }
 
 .email-footer ::placeholder{
@@ -569,6 +580,7 @@ transition: var(--transition-duration);
     display: flex;
     gap: 24px;
     flex-direction: column;
+    width: 100%;
 }
 
 
@@ -591,8 +603,12 @@ font-size: 16px;
 font-weight: 500;
 line-height: 24px; /* 150% */
 letter-spacing: 0.64px;
-padding: 12px 24px;
+padding: 8px 16px;
 
+}
+
+.filter-button-wrap{
+    padding: 48px 0;
 }
 
 .filter-button-item{
@@ -603,7 +619,7 @@ color: var(--iris, #4D5AE5);
 text-align: center;
 font-size: 16px;
 font-weight: 500;
-padding: 12px 24px;
+padding: 8px 16px;
 letter-spacing: 0.64px;
 line-height: 24px;
 transition: var(--transition-duration);
@@ -614,8 +630,9 @@ transition: var(--transition-duration);
 
 .filter-buttons-list{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .filter-button-wrap{
@@ -918,14 +935,14 @@ transition: var(--transition-duration);
     position: relative;
 }
 
-.modal-close{
+.modal-close, .mobile-menu-close{
     background-color: var(--cornflower);
     width: 24px;
     height: 24px;
     border-radius: 50%;
     transition: var(--transition-duration);
     color: var(--navyblue);
-    border: 1px solid var(--navyblue);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     position: absolute;
     right: 24px;
     top: 24px;
