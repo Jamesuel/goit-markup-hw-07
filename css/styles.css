@@ -1616,7 +1616,9 @@ text-align: center;
 .footer-container{
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
     
     
 }
@@ -1628,6 +1630,7 @@ text-align: center;
 .footer-social-media-logo{
     width: auto;
     margin-bottom: 0;
+    column-gap: 0;
 }
 
 .footer-paragraph{
