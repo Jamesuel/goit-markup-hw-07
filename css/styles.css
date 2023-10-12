@@ -1257,13 +1257,14 @@ letter-spacing: 0.64px;
     .section-title-heading{
         font-size: 56px;
         font-weight: 700;
-        line-height: 60px; /* 107.143% */
+        line-height: 60px; 
 letter-spacing: 1.12px;
     }
 
 
     .team-list{
         flex-wrap: wrap;
+        display: flex;
         gap: 24px;
         
     }
@@ -1394,14 +1395,7 @@ letter-spacing: 1.12px;
         margin-bottom: 76px;
     }
 
-    .footer-form{
-        display: flex;
-        gap: 24px;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
+    
     .subscribe-button{
         margin-top: 40px;
     }
@@ -1413,6 +1407,14 @@ letter-spacing: 1.12px;
 
     .footer-container{
         text-align: left;
+    }
+
+    .subscribe-footer-div{
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+
     }
 
 
