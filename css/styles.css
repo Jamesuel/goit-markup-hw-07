@@ -535,6 +535,11 @@ text-align: left;
     height: 16px;
 }
 
+.social-media-svg-footer{
+    width: 24px;
+    height: 24px;
+}
+
 .footer-container{
     display: flex;
     justify-content: center;
@@ -566,6 +571,7 @@ border-radius: 4px;
 border: 1px solid var(--WHITE, #FFF);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 background-color: var(--navyblue);
+margin-top: 16px;
 
 }
 
@@ -611,9 +617,10 @@ transition: var(--transition-duration);
 
 .footer-form{
     display: flex;
-    gap: 24px;
+    gap: 16px;
     flex-direction: column;
     width: 100%;
+    margin-top: 72px;
 }
 
 
@@ -1239,6 +1246,8 @@ letter-spacing: 0.64px;
 
 
 
+
+
 /* tablet */
 
 @media screen and (min-width: 768px) {
@@ -1269,10 +1278,6 @@ letter-spacing: 1.12px;
         
     }
 
-    .team-list-item{
-        flex-direction: column;
-        
-    }
 
     .nav-list{
         display: flex;
@@ -1328,7 +1333,8 @@ letter-spacing: 1.12px;
         display: flex;
         flex-wrap: wrap; 
         justify-content: center; 
-        gap: 24px; 
+        column-gap: 24px; 
+        row-gap: 64px;
     }
 
     .first-row{
@@ -1351,7 +1357,8 @@ letter-spacing: 1.12px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    flex-direction: column;
         
     }
     
@@ -1398,6 +1405,7 @@ letter-spacing: 1.12px;
     
     .subscribe-button{
         margin-top: 40px;
+        width: 165px;
     }
     
     .social-media-footer{
@@ -1414,7 +1422,27 @@ letter-spacing: 1.12px;
         gap: 24px;
         align-items: center;
         justify-content: center;
+        width: 552px;
+    
 
+    }
+
+    .footer-form{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        width: 552px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .email-footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email-user-box{
+        margin-top: 0;
     }
 
 
